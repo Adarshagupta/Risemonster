@@ -4680,3 +4680,13 @@ a.metaportal_fn_videobutton:hover .icon {
     bottom: 10px;
     z-index: 1;
 }
+@media screen and (max-width: 768px) {
+    .wallet{
+        display: none;
+    }
+    .metaportal_fn_mobnav .social{
+
+        display: none;
+    }
+}
+    
