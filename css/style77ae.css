@@ -15,9 +15,9 @@ p {
 }
 :root {
   --mc1: #cc00ff;
-  --mc2: #7000ff;
+  --mc2: #3700ff;
   --hc: #ddd;
-  --bc: #9ba0b8;
+  --bc: #748bff;
   --hff: "Heebo", sans-serif;
   --bff: "Nunito", sans-serif;
 }
@@ -776,7 +776,7 @@ a.full_link {
 .header.active {
   z-index: 60;
   margin: 10px;
-  padding: 20px 30px;
+  padding: 5px 30px;
   background: #1b121d;
   background: -moz-linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
   background: -webkit-linear-gradient(
@@ -787,6 +787,8 @@ a.full_link {
   );
   background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
   border-bottom-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(128, 128, 128, 0.466);
+  border-radius: 10px;
 }
 .header .header_in {
   display: -webkit-flex;
@@ -928,8 +930,8 @@ a.full_link {
 }
 #home {
   overflow: hidden;
-  padding-top: 179px;
-  padding-bottom: 150px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 .fn_cs_slider {
   padding: 0 20px;
@@ -1481,7 +1483,7 @@ a.metaportal_fn_videobutton:hover .icon {
 #about,
 .metaportal_fn_collectionpage,
 .metaportal_fn_comments {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 .fn_cs_section_divider {
   width: 100%;
@@ -4671,4 +4673,10 @@ a.metaportal_fn_videobutton:hover .icon {
   .social a:after {
     font-size: 14px;
   }
+}
+.phase{
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    z-index: 1;
 }
