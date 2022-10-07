@@ -104,7 +104,7 @@
 </body>
 <style>
     :root {
-  --orange: rgba(64, 67, 253, 0.522);
+  --orange: rgba(113, 116, 255, 0.522);
   --darkorange: #dd7d25;
   --black: #2b2d42;
   --white: #fff;

@@ -8,6 +8,7 @@
     import romm6 from "../assets/romm6.png"
     import logosvg from "../assets/logo.svg"
     import Scroll from "../components/scroll.svelte"
+    import Image from "../components/image.svelte"
 </script>
 
 <body>
@@ -77,6 +78,7 @@
 <section>
    <Scroll />
 </section>
+<Image />
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
