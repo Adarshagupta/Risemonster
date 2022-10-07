@@ -1,0 +1,163 @@
+<script>
+    import logo from "../assets/logo.png"
+    import banner from "../assets/banner.jpg"
+    import romm1 from "../assets/romm1.png"
+    import romm2 from "../assets/romm2.png"
+    import romm3 from "../assets/romm3.png"
+    import romm4 from "../assets/romm4.png"
+    import romm6 from "../assets/romm6.png"
+</script>
+
+<body>
+<header>
+    <div class="logo">
+      <img class="logo-1" src={logo} width="100px" alt="logo">
+    </div>
+    <div class="image1">
+        <img class="image-1" src={banner} width="100px" alt="logo">
+    </div>
+</header>
+<div class="row">
+    <div class="text-1">
+    <h1 class="h1">
+      WELCOME TO 
+      <br>
+      RISE OF MUTANTS
+    </h1>
+    <p>
+        Rise Of Mutants is collection of 4444 mutant monsters living in solana blockachain. Every Mutants are uniquely generated using ArtificiaL INtellegence
+        BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits
+    </p></div>
+<div class="image-2-section">
+    <dev class="column">
+        <img class="image3" src={romm1} alt="" srcset="">
+    </dev>
+    <dev class="column">
+        <img class="image3" src={romm2} alt="">
+    </dev>
+    <dev class="column">
+        <img class="image3" src={romm3} alt="">
+    </dev>
+    <dev class="column">
+        <img class="image3" src={romm4} alt="">
+        
+    </dev>
+</div>
+</div>
+<div class="box-info">
+    
+</div>
+<div class="row">
+    <div class="text-1">
+    <h1 class="h1">
+      THE UNIQUENESS OF MUTANTS
+    </h1>
+    <p>
+        Rise Of Mutants is collection of 4444 mutant monsters living in solana blockachain. Every Mutants are uniquely generated using ArtificiaL INtellegence
+        BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits
+    </p></div>
+<div class="image-2-section">
+    <dev class="column">
+        <img class="image-4" src={romm6} alt="" srcset="">
+    </dev>
+   
+
+</div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    body{
+        font-family: 'Noto Sans', sans-serif;
+    }
+    @media ( min-width: 800px){
+        body{
+        margin-left: 60px;
+        margin-right: 60px;
+        }
+    }
+    .logo-1{
+        max-width: 10%;
+        max-width: 125px;
+    width: auto;
+    height: auto;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .image1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+  .image-1{
+    max-width: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid purple;
+
+
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 40px;
+    border-bottom: 1px solid #3b3b3b;
+    
+  }
+  @media (max-width: 850px){
+    .row{
+      flex-direction: column;
+    }
+  }
+h1{
+    color: yellow;
+    font-weight: 900;
+    display: flex !important;
+    line-height: 1.2;
+    font-size: 2.5em;
+
+    font-family: "Montserrat",sans-serif;
+}
+p{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.1em;
+}
+  .text-1{
+    max-width: 600px;
+  }
+  .image-2-section{
+    max-width: 100%;
+    max-width: 400px;
+    
+  }
+  @media(min-width: 850px){
+    .image-2-section{
+      margin-left: 90px;
+    }
+  }
+  .image3{
+    width: 160px;
+    margin: 5px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+  .box-info{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+  }
+  .image-4{
+    width: 100%;
+    border-radius: 10px;
+  }
+  </style>
