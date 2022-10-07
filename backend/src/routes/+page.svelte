@@ -6,6 +6,8 @@
     import romm3 from "../assets/romm3.png"
     import romm4 from "../assets/romm4.png"
     import romm6 from "../assets/romm6.png"
+    import logosvg from "../assets/logo.svg"
+    import Scroll from "../components/scroll.svelte"
 </script>
 
 <body>
@@ -45,7 +47,16 @@
 </div>
 </div>
 <div class="box-info">
-    
+  <div>
+    <img class="logosvg" src={logosvg} alt="svgicon" srcset="">
+  </div>
+    <div class="box-text">
+      <p>Buy Rise of Mutants<br>
+      in opensea or Rairable</p>
+    </div>
+    <div class="button">
+      <button class="button1">BUY NOW</button>
+    </div>
 </div>
 <div class="row">
     <div class="text-1">
@@ -60,9 +71,12 @@
     <dev class="column">
         <img class="image-4" src={romm6} alt="" srcset="">
     </dev>
-   
 
 </div>
+</div>
+<section>
+   <Scroll />
+</section>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -154,7 +168,25 @@ p{
     background-color: yellow;
     border-radius: 10px;
     margin-top: 20px;
+    display: flex;
     
+  }
+
+  .logosvg{
+    max-width: 100px;
+  }
+  .box-text{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
   }
   .image-4{
     width: 100%;
