@@ -1,0 +1,14 @@
+.sec2-text{
+}
+.images{
+    max-width: 350px; 
+    position: absolute;
+    right: 0;
+}
+.image{
+
+    width: 150px;
+    border: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.247);
+    margin: 2px;
+}
