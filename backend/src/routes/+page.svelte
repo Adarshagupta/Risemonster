@@ -1,23 +1,34 @@
 <script>
     import logo from "../assets/logo.png"
-    import banner from "../assets/banner.jpg"
     import romm1 from "../assets/romm1.png"
     import romm2 from "../assets/romm2.png"
     import romm3 from "../assets/romm3.png"
     import romm4 from "../assets/romm4.png"
     import romm6 from "../assets/romm6.png"
     import logosvg from "../assets/logo.svg"
-    import Scroll from "../components/scroll.svelte"
-    import Image from "../components/image.svelte"
+    import Scroll from "../components/scroll.svelte";
+    import Image from "../components/image.svelte";
+    import fav from "../assets/favicon.png"
+    import banner1 from "../assets/banner1.png"
+
 </script>
 
 <body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROM ~ Home</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="build/bundle.css">
+    <link rel="icon" type="image/png" href={fav}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <header>
     <div class="logo">
       <img class="logo-1" src={logo} width="100px" alt="logo">
     </div>
     <div class="image1">
-        <img class="image-1" src={banner} width="100px" alt="logo">
+        <img class="image-1" src={banner1} width="100px" alt="logo">
     </div>
 </header>
 <div class="row">
@@ -171,9 +182,23 @@ p{
     border-radius: 10px;
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
     
   }
-
+.button1{
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: "Montserrat",sans-serif;
+    margin-right: 20px;
+}
+.button1:hover{
+    background-color: #3b3b3b;
+    color: yellow;
+}
   .logosvg{
     max-width: 100px;
   }
@@ -183,6 +208,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
   }
   .button{
     display: flex;
