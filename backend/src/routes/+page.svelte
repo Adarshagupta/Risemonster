@@ -7,9 +7,15 @@
     import romm6 from "../assets/romm6.png"
     import logosvg from "../assets/logo.svg"
     import Scroll from "../components/scroll.svelte";
-    import Image from "../components/image.svelte";
-    import fav from "../assets/favicon.png"
+    import fav from "../assets/favicon.png";
     import banner1 from "../assets/banner1.png"
+    import Tools from "../components/tools.svelte";
+    import logo1 from "../assets/logo1.svg"
+    import Team from "../components/Team.svelte";
+    import Footer from "../components/footer.svelte";
+    import Fair from "../components/fair.svelte";
+    import Faq from "../components/faq.svelte";
+    import Join from "../components/join.svelte";
 
 </script>
 
@@ -25,11 +31,9 @@
   </head>
 <header>
     <div class="logo">
-      <img class="logo-1" src={logo} width="100px" alt="logo">
+      <img class="logo-1" src={logo1} width="100px" alt="logo">
     </div>
-    <div class="image1">
-        <img class="image-1" src={banner1} width="100px" alt="logo">
-    </div>
+    <div class="image1"> <img class="image-1" src={banner1} width="100px" alt="logo"></div>
 </header>
 <div class="row">
     <div class="text-1">
@@ -58,6 +62,7 @@
     </dev>
 </div>
 </div>
+<Fair />
 <div class="box-info">
   <div>
     <img class="logosvg" src={logosvg} alt="svgicon" srcset="">
@@ -89,7 +94,10 @@
 <section>
    <Scroll />
 </section>
-<Image />
+<Tools />
+<Team />
+<Join />
+<Footer />
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -125,7 +133,7 @@
     width: 1200px;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid purple;
 
 
@@ -134,8 +142,7 @@
     display: flex;
     flex-direction: row;
     color: white;
-    margin-top: 40px;
-    border-bottom: 1px solid #3b3b3b;
+    margin-top: 30px;
     
   }
   @media (max-width: 850px){
