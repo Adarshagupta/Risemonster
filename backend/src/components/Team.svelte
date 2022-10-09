@@ -10,6 +10,7 @@
     <p><b>ADARSH:</b> Blockchain Developer, likes to work a lot.</p>
     <p><b>Prazzwol:</b> Artist, likes to waste time a lot</p>
     <p><b>Dolly: </b>Artist, Illutrator, loves technology besicly a nerd</p>
+    <button>Join Team</button>
 </div>
 <div class="img">
 <img src={Avatar1} alt="Avatar 1">
@@ -54,4 +55,20 @@ img{
     }
 
   }
+  button{
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid white;
+  }
+  button:hover{
+    background-color: orangered;
+    color: white;
+    border: 2px solid yellow;
+  }
+
+
 </style>

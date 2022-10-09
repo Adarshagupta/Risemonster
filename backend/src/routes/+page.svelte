@@ -16,6 +16,7 @@
     import Fair from "../components/fair.svelte";
     import Faq from "../components/faq.svelte";
     import Join from "../components/join.svelte";
+    
 
 </script>
 

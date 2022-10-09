@@ -10,6 +10,9 @@
     </div>
 </body>
 <style>
+    body{
+        margin: 0;
+    }
     .join{
         width: 100%;
         height: 400px;
@@ -21,6 +24,7 @@
         display: flex;
         padding-top: 20px;
         text-align: center;
+        margin-right: 20px;
 }
 h1{
     color: yellow;
