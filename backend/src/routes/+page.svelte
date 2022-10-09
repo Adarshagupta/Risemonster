@@ -16,6 +16,7 @@
     import Fair from "../components/fair.svelte";
     import Faq from "../components/faq.svelte";
     import Join from "../components/join.svelte";
+    import { Image } from 'svelte-lazy-loader';
     
 
 </script>
@@ -44,8 +45,8 @@
       RISE OF MUTANTS
     </h1>
     <p>
-        Rise Of Mutants is collection of 4444 mutant monsters living in solana blockachain. Every Mutants are uniquely generated using ArtificiaL INtellegence
-        BAYC is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits
+        Rise Of Mutants is collection of 4444 mutant monsters living in solana blockachain. Every Mutants are uniquely generated using ArtificiaL Intellegence
+        . Your mutants doubles as your rise membership card, and grants access to members-only benefits. Owning ROM NFT also gives to access to our future Metaverse projects.
     </p></div>
 <div class="image-2-section">
     <dev class="column">
