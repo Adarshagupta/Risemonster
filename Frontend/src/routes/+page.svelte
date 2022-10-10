@@ -17,11 +17,13 @@
     import Faq from "../components/faq.svelte";
     import Join from "../components/join.svelte";
     import { Image } from 'svelte-lazy-loader';
+    import Connect from "../components/connect.svelte" 
     
 
 </script>
 
 <body>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +39,8 @@
     </div>
     <div class="image1"> <img class="image-1" src={banner1} width="100px" alt="logo"></div>
 </header>
+<Connect />
+
 <div class="row">
     <div class="text-1">
     <h1 class="h1">
