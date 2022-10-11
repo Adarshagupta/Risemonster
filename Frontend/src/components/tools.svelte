@@ -30,8 +30,7 @@
         color: white;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid rgb(97, 96, 96);
-        border-top: 1px solid rgb(95, 94, 94);
+        
 padding: 20px;
     }
     h1{

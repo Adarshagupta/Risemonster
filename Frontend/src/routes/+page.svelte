@@ -18,6 +18,8 @@
     import Join from "../components/join.svelte";
     import { Image } from 'svelte-lazy-loader';
     import Connect from "../components/connect.svelte" 
+    import Game from "../components/game.svelte"
+    import Header from "../components/header.svelte"
     
 
 </script>
@@ -33,6 +35,8 @@
     <link rel="icon" type="image/png" href={fav}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <Header />
+
 <header>
     <div class="logo">
       <img class="logo-1" src={logo1} width="100px" alt="logo">
@@ -40,7 +44,6 @@
     <div class="image1"> <img class="image-1" src={banner1} width="100px" alt="logo"></div>
 </header>
 <Connect />
-
 <div class="row">
     <div class="text-1">
     <h1 class="h1">
@@ -100,9 +103,10 @@
 <section>
    <Scroll />
 </section>
-<Tools />
 <Team />
+<Game />
 <Join />
+<Tools />
 <Footer />
 </body>
 <style>
