@@ -20,7 +20,27 @@
     import Connect from "../components/connect.svelte" 
     import Game from "../components/game.svelte"
     import Header from "../components/header.svelte"
-    
+
+    let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 
 </script>
 
@@ -43,7 +63,7 @@
     </div>
     <div class="image1"> <img class="image-1" src={banner1} width="100px" alt="logo"></div>
 </header>
-<Connect />
+
 <div class="row">
     <div class="text-1">
     <h1 class="h1">
@@ -108,6 +128,9 @@
 <Join />
 <Tools />
 <Footer />
+<div id="progress">
+  <span id="progress-value">top</span>
+</div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
@@ -236,5 +259,31 @@ p{
   .image-4{
     width: 100%;
     border-radius: 10px;
+  }
+  #progress{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: #20c000;
+    z-index: 100;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(104, 100, 100);
+    cursor: pointer;
+  }
+  #progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #cecece;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: aqua;
+    border-radius: 50%;
+
   }
   </style>
